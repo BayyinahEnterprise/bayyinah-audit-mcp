@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bayyinah-audit-mcp"
+version = "0.5.5"
+description = "MCP server exposing Bayyinah Audit Framework tools."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "PolyForm-Noncommercial-1.0.0" }
+authors = [
+  { name = "BayyinahEnterprise" }
+]
+dependencies = [
+  "mcp>=1.12.0",
+  "pydantic>=2.6.0",
+  "typing_extensions>=4.7"
+]
+
+[project.optional-dependencies]
+default = []
+cross-vendor = [
+  "anthropic>=0.54.0",
+  "openai>=1.80.0",
+  "google-genai>=1.20.0"
+]
+pdf = [
+  "pdfplumber>=0.11.0"
+]
+all = [
+  "anthropic>=0.54.0",
+  "openai>=1.80.0",
+  "google-genai>=1.20.0",
+  "pdfplumber>=0.11.0"
+]
+
+[project.scripts]
+bayyinah-audit-mcp = "bayyinah_audit_mcp.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["bayyinah_audit_mcp*"]
+namespaces = true
+
+[tool.setuptools.package-data]
+bayyinah_audit_mcp = ["data/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

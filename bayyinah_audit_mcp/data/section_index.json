@@ -1,0 +1,22 @@
+{
+  "5.2": {
+    "title": "Visible Claim and Evidence Alignment",
+    "summary": "Checks whether surface-level claims are supported by explicit evidence available to the evaluator. Flags claims that overstate, imply, or conceal evidence boundaries."
+  },
+  "9.1": {
+    "title": "Section Reference Normalization and Resolution",
+    "summary": "Defines how framework section references should be normalized, resolved, and reported. Supports equivalent forms such as §9.1, 9.1, and Section 9.1."
+  },
+  "14.5": {
+    "title": "Cross-Document Attribution Verification",
+    "summary": "Validates citations, section references, and cross-document claims against an available section index or source corpus. Unresolved attributions should be reported rather than inferred."
+  },
+  "18.10": {
+    "title": "Hidden Substrate and Metadata Inspection",
+    "summary": "Requires auditors to consider hidden or semi-hidden document substrates such as embedded text, metadata, form fields, annotations, alt text, attachments, and barcode payloads when available."
+  },
+  "23.3": {
+    "title": "Round-N Report Format and Severity Gate",
+    "summary": "Defines the canonical round report structure and finding format. Findings are expressed as severity, section reference, message, and location, with threshold-based blocking."
+  }
+}
