@@ -119,10 +119,6 @@ pytest
 
 CI runs the matrix `{3.10, 3.11, 3.12, 3.13}` on every push and pull request.
 
-## Audit-chain record
-
-The `docs/audit-chain/` directory contains the six-round cross-instance review record (`REVIEW-V1.md` through `REVIEW-V6.md`), patch ledger (`PATCHES.md`), substrate reconciliation notes, and handoff documents that produced this v0.5.5 release candidate. Preserved per Bayyinah Audit Framework §14.5 immutability discipline.
-
 ## Status
 
 **v0.5.5** -- release candidate. Lane 4 of the four-lane Bayyinah audit substrate. 43 tests passing across the cross-vendor audit cycle-guard (`F-V05-DICT-CYCLE-LOOP` closed in v0.5.5), tool registration, section lookup, and attribution checks.
